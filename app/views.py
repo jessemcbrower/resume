@@ -18,22 +18,27 @@ def experience():
 	return render_template('experience.html',
 							title='Experience')
 
-@app.route('/skills')
-def skills():
-	return render_template('soon.html',
-							title='Skills')
+# @app.route('/skills')
+# def skills():
+# 	return render_template('skills.html',
+# 							title='Skills')
 
-@app.route('/work')
-def work():
-	return render_template('soon.html',
-							title='Work')
+# @app.route('/work')
+# def work():
+# 	return render_template('work.html',
+# 							title='Work')
 
-@app.route('/gallery')
-def gallery():
-	return render_template('soon.html',
-							title='Gallery')
+# @app.route('/gallery')
+# def gallery():
+# 	return render_template('gallery.html',
+# 							title='Gallery')
 
-@app.route('/about')
-def about():
+# @app.route('/about')
+# def about():
+# 	return render_template('about.html',
+# 							title='About Me')
+
+@app.errorhandler(404)
+def page_not_found(e):
 	return render_template('soon.html',
-							title='About Me')
+						title='Coming soon...')
