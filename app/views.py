@@ -2,12 +2,12 @@ import os
 from flask import render_template
 from app import app
 
-@app.route('/')
 @app.route('/menu')
 def menu():
 	return render_template('menu.html',
 							title='Menu')
 
+@app.route('/')
 @app.route('/education')
 def education():
 	return render_template('education.html',
