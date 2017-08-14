@@ -11,8 +11,10 @@ body h2 {
 }
 .topnav {
 	background-color: #ddd;
+	font-size: 0;
 }
 .topnav a, .topnav span {
+	font-size: 16px;
 	display: inline-block;
 	padding: 8px;
 	background-color: #ddd;
