@@ -21,9 +21,14 @@ body h2 {
 	color: black;
 	text-decoration: none;
 }
-.topnav a:hover {
+.topnav a:hover, .topnav .active {
 	background-color: white;
 }
-.topnav .active {
-	background-color: white;
-}
+
+/*Adding browser responsiveness*/
+
+/*@media (max-width: 1080px) {
+	.topnav a:not(.topnav .active) {
+		display: none;
+	}
+}	*/
