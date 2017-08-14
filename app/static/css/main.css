@@ -28,12 +28,22 @@ body h2 {
 	display: block;
 	margin: auto;
 	width: 50%;
-	padding: 5px;
+}
+.thumbnails {
+	text-align: center;
+}
+.thumbnails li {
+	display: inline;
+}
+.thumbnails img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
 }
 
 /* Adding browser responsiveness */
 
-@media (max-width: 1080px) {
+@media (max-width: 725px) {
 	.topnav a:not(.topnav .active) {
 		display: none;
 	}
