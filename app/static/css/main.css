@@ -61,7 +61,7 @@ body h2 {
 
 /* Browser responsiveness */
 
-@media (max-width: 920px) {
+@media (max-width: 950px) {
 	html {
 		font-size: 1.7vw;
 	}
