@@ -9,21 +9,39 @@ body h2 {
 .align-right {
 	float: right;
 }
-.topnav {
-	background-color: #ddd;
-	font-size: 0;
-}
-.topnav a, .topnav span {
-	font-size: 16px;
-	display: inline-block;
-	padding: 8px;
-	background-color: #ddd;
-	color: black;
-	text-decoration: none;
-}
-.topnav a:hover, .topnav .active {
+
+/*Active Class*/
+
+.active {
 	background-color: white;
 }
+
+/*Top Navigation Bar*/
+
+.topnav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ddd;
+}
+.topnav li {
+	float: left;
+}
+.topnav li a, .topnav li span {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 8px;
+	text-decoration: none;
+}
+.topnav li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/*Photo Gallery*/
+
 .featured {
 	display: block;
 	margin: auto;
@@ -41,10 +59,24 @@ body h2 {
 	object-fit: cover;
 }
 
-/* Adding browser responsiveness */
+/* Browser responsiveness */
 
-@media (max-width: 725px) {
-	.topnav a:not(.topnav .active) {
-		display: none;
+html {
+	font-size: 1.7vw;
+}
+/*@media (max-width: 780px) {
+	.topnav {
+		font-size: 0;
 	}
-}	
+	.active {
+	    position: relative;
+	    display: inline-block;
+		}
+	.topnav a:not(.topnav .active) {
+	    display: none;
+	    background-color: #white;
+	}
+	.topnav:hover a:not(.topnav .active) {
+		display: block;
+	}
+}*/
