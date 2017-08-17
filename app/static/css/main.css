@@ -61,11 +61,10 @@ body h2 {
 
 /* Browser responsiveness */
 
-@media (max-width: 950px) {
-	html {
+html {
 		font-size: 1.7vw;
 	}
-}
+
 /*@media (max-width: 780px) {
 	.topnav {
 		font-size: 0;
